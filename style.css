@@ -1,0 +1,69 @@
+/* Anatomia de Uma Pseudo-classe
+seletor:pseudo-class {
+    propriedade: valor
+} */
+
+/* First-child = Estilizando o Primeiro Elemento de Uma Tag Pai  */
+p:first-child {
+    background-color: yellow;
+}
+
+
+/* Last-child = Estilizando o Ultimo Elemento de Uma Tag Pai  */
+p:last-child {
+    background-color: aqua;
+}
+
+
+/* Pseudo-class de Negação  */
+p:not(.negar) {
+    background-color: green;
+}
+
+/* nth-child = Estilizando Elementos de Acordo com Sua Posição  */
+
+/* nth-child (odd) = Estilizando Elementos Ímpares  */
+.elemento li:nth-child(odd) {
+    color: red;
+}
+
+
+/* nth-child (even) = Estilizando Elementos Pares  */
+.elemento-2 li:nth-child(even) {
+    color: blue;
+}
+
+/* nth-child = Estilizando Elementos Pares  */
+.tres li:nth-child(3n) {
+    color: purple;
+}
+
+
+/* nth-child = Estilizando Elementos Pela Posição Especifica  */
+.posicao li:nth-child(4) {
+    color: red;
+}
+
+
+/* nth-child = Estilizando Um Intervalo Especifico de Uma Lista, Ranger  */
+.especifico li:nth-child(n+3):nth-child(-n+5) {
+    color: orangered;
+}
+
+
+/* nth-last-child = Estilizando Elementos de Baixo Pra Cima  */
+.baixo li:nth-last-child(1) {
+    color: aqua;
+}
+
+
+/* only-child = Estilizando Elementos Que Não Possui Irmãos  */
+p:only-child {
+    background-color: red;
+}
+
+/* Estilizando Os Títulos do Meu Projeto */
+h1 {
+    background-color: black;
+    color: white;
+}
